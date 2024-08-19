@@ -6,6 +6,7 @@
 
 :root {
   --primary-color: #fcf5e9;
+  --dark-color: #333;
   --container-normal: 1100px;
   --container-wide: 1400px;
   --container-narrow: 900px;
@@ -32,6 +33,41 @@ img {
 /*Utility Classes*/
 .bg-primary {
   background: var(--primary-color);
+  color: #333;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: white;
+}
+
+.bg-dark .bg-primary {
+  padding: 0 0.3rem;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
 }
 
 /*Container*/
@@ -148,6 +184,83 @@ img {
 .footer a {
   margin: 0.2rem;
 }
+
+/*About Style  Section*/
+.services {
+  padding: 3rem 0 4rem;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.services-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+/*About Team*/
+
+.team {
+  padding: 3rem 0 4rem;
+}
+
+.team-flex {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.team-item img {
+  border-radius: 10px;
+}
+
+/*Contact*/
+
+.contact {
+  padding: 3rem 0 4rem;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin: 2rem 0;
+}
+
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact button {
+  width: 100%;
+}
+
 /* Media Queries*/
 
 @media (max-width: 768px) {
@@ -171,5 +284,13 @@ img {
 
   .footer .footer-flex {
     text-align: center;
+  }
+
+  .services-flex {
+    flex-direction: column;
+  }
+
+  .team-flex {
+    flex-direction: column;
   }
 }
