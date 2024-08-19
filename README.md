@@ -1,3 +1,7 @@
 # Lumina Creative
 
-A simple HTML/CSS website project for a creative agency, completed as part of an exercise from Brad Traversy's course.
+A simple website for a creative agency, built as an exercise to review the HTML and CSS concepts I've learned from Brad Traversy's course.
+
+## You can check it out here:
+
+🔗https://luminacreative-2024.netlify.app/
